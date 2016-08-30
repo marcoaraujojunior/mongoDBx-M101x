@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/nvm/.nvm/versions/node/v0.12.15/bin/node',
+1 verbose cli   '/home/nvm/.nvm/versions/node/v0.12.15/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test' ]
+2 info using npm@2.15.1
+3 info using node@v0.12.15
+4 verbose run-script [ 'pretest', 'test', 'posttest' ]
+5 info pretest @
+6 info test @
+7 verbose unsafe-perm in lifecycle true
+8 info @ Failed to exec test script
+9 verbose stack Error: @ test: `mocha test.js`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/home/nvm/.nvm/versions/node/v0.12.15/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+9 verbose stack     at EventEmitter.emit (events.js:110:17)
+9 verbose stack     at ChildProcess.<anonymous> (/home/nvm/.nvm/versions/node/v0.12.15/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at ChildProcess.emit (events.js:110:17)
+9 verbose stack     at maybeClose (child_process.js:1019:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1091:5)
+10 verbose pkgid @
+11 verbose cwd /home/nvm/mean/task_1_11
+12 error Linux 3.13.0-68-generic
+13 error argv "/home/nvm/.nvm/versions/node/v0.12.15/bin/node" "/home/nvm/.nvm/versions/node/v0.12.15/bin/npm" "run" "test"
+14 error node v0.12.15
+15 error npm  v2.15.1
+16 error code ELIFECYCLE
+17 error @ test: `mocha test.js`
+17 error Exit status 1
+18 error Failed at the @ test script 'mocha test.js'.
+18 error This is most likely a problem with the  package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     mocha test.js
+18 error You can get information on how to open an issue for this project with:
+18 error     npm bugs
+18 error Or if that isn't available, you can get their info via:
+18 error
+18 error     npm owner ls
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
