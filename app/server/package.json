@@ -18,8 +18,7 @@
     "mocha": "2.2.4"
   },
   "scripts": {
-    "check-credentials": "mocha tests/part1.js",
-    "test": "mocha tests/test.js",
+    "test": "mocha --timeout 15000 tests/test.js",
     "watch": "gulp watch"
   }
 }

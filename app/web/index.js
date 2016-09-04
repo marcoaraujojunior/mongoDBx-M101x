@@ -1,6 +1,10 @@
-var controllers = require('./controllers');
-var directives = require('./directives');
-var services = require('./services');
+global.rootRequire = function(name) {
+    return require(require('path').dirname(require.main.filename) + '/' + name);
+}
+
+var controllers = rootRequire('controllers/UserMenu');
+var directives = rootRequire('directives/UserMenu');
+var services = rootRequire('services/User');
 var _ = require('underscore');
 
 var app = angular.module('mean-retail', ['ng']);

@@ -2,7 +2,7 @@
 function setupAuth(User, app) {
   var passport = require('passport');
   var FacebookStrategy = require('passport-facebook').Strategy;
-  var Config = rootRequire('config/config.json');
+  var Config = rootRequire('config/config');
 
   // High level serialize/de-serialize configuration for passport
   passport.serializeUser(function(user, done) {

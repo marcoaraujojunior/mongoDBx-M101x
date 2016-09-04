@@ -16,6 +16,5 @@ module.exports = function(wagner) {
 
   wagner.factory('Config', function() {
     return Config;
-    return JSON.parse(fs.readFileSync('./config.json').toString());
   });
 };
